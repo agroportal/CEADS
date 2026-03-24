@@ -1,0 +1,275 @@
+@prefix : <https://w3id.org/agrisemantics/MIO/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix mio: <https://w3id.org/agrisemantics/MIO/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <https://w3id.org/agrisemantics/MIO/> .
+
+<https://w3id.org/agrisemantics/MIO> rdf:type owl:Ontology ;
+                                      dct:description "An ontology for representing milk invoice and settlement data, including delivered milk quantities, price components, deductions, and totals."@en ;
+                                      dct:title "Milk Invoice Ontology"@en ;
+                                      owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gMonth
+xsd:gMonth rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.org/provider
+sdo:provider rdf:type owl:ObjectProperty ;
+             rdfs:domain mio:MilkInvoice ;
+             rdfs:range mio:MilkSupplier ;
+             rdfs:label "provider"@en ;
+             skos:definition "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/agrisemantics/MIO/contributionMilkBE
+mio:contributionMilkBE rdf:type owl:DatatypeProperty ;
+                       rdfs:domain mio:MilkInvoice ;
+                       rdfs:range xsd:float ;
+                       rdfs:label "MilkBE contribution"@en ;
+                       skos:definition "The monetary amount deducted from the milk payment as a contribution to MilkBE"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/contributionSanitaryFund
+mio:contributionSanitaryFund rdf:type owl:DatatypeProperty ;
+                             rdfs:domain mio:MilkInvoice ;
+                             rdfs:range xsd:float ;
+                             rdfs:label "contribution to sanitary fund"@en ;
+                             skos:definition "The monetary amount deducted from the milk payment as a contribution to the sanitary fund during the reporting period"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/cooperativeRepayments
+mio:cooperativeRepayments rdf:type owl:DatatypeProperty ;
+                          rdfs:label "cooperative repayments"@en ;
+                          skos:definition "The total monetary amount of supplementary payments or repayments made by the cooperative to the milk supplier"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/fatAmount
+mio:fatAmount rdf:type owl:DatatypeProperty ;
+              rdfs:domain mio:MilkInvoice ;
+              rdfs:range xsd:float ;
+              rdfs:label "fat amount"@en ;
+              skos:definition "The total quantity of butterfat contained in the delivered milk, expressed in kilograms"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/fatPrice
+mio:fatPrice rdf:type owl:DatatypeProperty ;
+             rdfs:domain mio:MilkInvoice ;
+             rdfs:range xsd:float ;
+             rdfs:label "fat price"@en ;
+             skos:definition "The unit price applied to butterfat content, expressed as the monetary amount per 100 kilograms of butterfat, excluding value-added tax (VAT)."@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/holdingsOther
+mio:holdingsOther rdf:type owl:DatatypeProperty ;
+                  rdfs:domain mio:MilkInvoice ;
+                  rdfs:range xsd:float ;
+                  rdfs:label "other deductions"@en ;
+                  skos:definition "The total monetary amount of other deductions withheld from the milk payment that are not otherwise specifically categorized"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/holdingsVLAM
+mio:holdingsVLAM rdf:type owl:DatatypeProperty ;
+                 rdfs:domain mio:MilkInvoice ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "VLAM contribution"@en ;
+                 skos:definition "The monetary amount deducted from the milk payment as a levy or contribution to the Flemish Centre for Agricultural and Fisheries Marketing (VLAM)"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/invoiceIdentifier
+mio:invoiceIdentifier rdf:type owl:DatatypeProperty ;
+                      rdfs:domain mio:MilkInvoice ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "invoice identifier"@en ;
+                      skos:definition "A unique identifier for a milk invoice."@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/literPrice
+mio:literPrice rdf:type owl:DatatypeProperty ;
+               rdfs:domain mio:MilkInvoice ;
+               rdfs:range xsd:float ;
+               rdfs:label "price per liter"@en ;
+               skos:definition "The unit price applied to whole milk volume, expressed as the monetary amount per 100 liters, excluding value-added tax (VAT)"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/milkPaymentExclVAT
+mio:milkPaymentExclVAT rdf:type owl:DatatypeProperty ;
+                       rdfs:label "The total monetary amount paid for delivered milk, excluding value-added tax (VAT)"@en ,
+                                  "milk payment excluding VAT"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/milkPaymentInclVAT
+mio:milkPaymentInclVAT rdf:type owl:DatatypeProperty ;
+                       rdfs:label "milk payment including VAT"@en ;
+                       skos:definition "The total monetary amount paid for delivered milk, including value-added tax (VAT)"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/milkSupplierNumber
+mio:milkSupplierNumber rdf:type owl:DatatypeProperty ;
+                       rdfs:domain mio:MilkSupplier ;
+                       rdfs:range xsd:integer ;
+                       rdfs:label "milk supplier number"@en ;
+                       skos:definition "The identifier assigned to a milk supplier in the invoicing system."@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/milkVolume
+mio:milkVolume rdf:type owl:DatatypeProperty ;
+               rdfs:domain mio:MilkInvoice ;
+               rdfs:range xsd:float ;
+               rdfs:label "milk volume"@en ;
+               skos:definition "The quantity of whole milk delivered, expressed in liters"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/month
+mio:month rdf:type owl:DatatypeProperty ;
+          rdfs:domain mio:MilkInvoice ;
+          rdfs:range xsd:gMonth ;
+          rdfs:label "month"@en ;
+          skos:definition "The month of the billing period."@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/proteinAmount
+mio:proteinAmount rdf:type owl:DatatypeProperty ;
+                  rdfs:domain mio:MilkInvoice ;
+                  rdfs:range xsd:float ;
+                  rdfs:label "protein amount"@en ;
+                  skos:definition "The total quantity of protein contained in the delivered milk, expressed in kilograms"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/proteinPrice
+mio:proteinPrice rdf:type owl:DatatypeProperty ;
+                 rdfs:domain mio:MilkInvoice ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "protein price"@en ;
+                 skos:definition "The unit price applied to protein content, expressed as the monetary amount per 100 kilograms of protein, excluding value-added tax (VAT)."@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/receivedPremiums
+mio:receivedPremiums rdf:type owl:DatatypeProperty ;
+                     rdfs:label "premiums received"@en ;
+                     skos:definition "The total monetary amount of premiums or bonus payments granted to the milk supplier"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/skimmedMilkPaymentExclVAT
+mio:skimmedMilkPaymentExclVAT rdf:type owl:DatatypeProperty ;
+                              rdfs:label "skimmed milk payment excluding VAT"@en ;
+                              skos:definition "The total monetary amount paid for delivered skimmed milk, excluding value-added tax (VAT)"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/skimmedMilkPaymentInclVAT
+mio:skimmedMilkPaymentInclVAT rdf:type owl:DatatypeProperty ;
+                              rdfs:label "skimmed milk payment including VAT"@en ;
+                              skos:definition "The total monetary amount paid for delivered skimmed milk, including value-added tax (VAT)"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/skimmedMilkVolume
+mio:skimmedMilkVolume rdf:type owl:DatatypeProperty ;
+                      rdfs:label "skimmed milk volume"@en ;
+                      skos:definition "The quantity of skimmed milk delivered, expressed in liters"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/year
+mio:year rdf:type owl:DatatypeProperty ;
+         rdfs:domain mio:MilkInvoice ;
+         rdfs:range xsd:gYear ;
+         rdfs:label "year"@en ;
+         skos:definition "The year of the billing period."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class ;
+           rdfs:label "Agent"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf foaf:Agent ;
+                  owl:disjointWith foaf:Person ;
+                  rdfs:label "Organization"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class ;
+            rdfs:subClassOf foaf:Agent ;
+            rdfs:label "Person"@en .
+
+
+###  https://schema.org/Invoice
+sdo:Invoice rdf:type owl:Class ;
+            rdfs:label "Invoice"@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/MilkInvoice
+mio:MilkInvoice rdf:type owl:Class ;
+                rdfs:subClassOf sdo:Invoice ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty sdo:provider ;
+                                  owl:someValuesFrom mio:MilkSupplier
+                                ] ;
+                rdfs:label "Milk invoice"@en ;
+                skos:definition "A document or record representing the financial settlement for milk supplied during a given billing period."@en .
+
+
+###  https://w3id.org/agrisemantics/MIO/MilkSupplier
+mio:MilkSupplier rdf:type owl:Class ;
+                 rdfs:subClassOf foaf:Agent ,
+                                 [ rdf:type owl:Class ;
+                                   owl:unionOf ( foaf:Organization
+                                                 foaf:Person
+                                               )
+                                 ] ;
+                 rdfs:label "Milk supplier"@en ;
+                 skos:definition "An agent that supplies milk and is identified by a supplier number in the invoicing system. A milk supplier may be either a person or an organization."@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
