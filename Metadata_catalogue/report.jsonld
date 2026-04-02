@@ -1,0 +1,311 @@
+{
+    "@graph": [
+        {
+            "@id": "_:b0",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:NodeKindConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/c1577bd231c71b0b1910272999755d3414867cfd"
+            },
+            "sh:focusNode": {
+                "@id": "_:b1"
+            },
+            "sh:value": "JSON-LD",
+            "sh:resultPath": {
+                "@id": "dc:format"
+            },
+            "sh:resultMessage": "Value does not have node kind BlankNodeOrIRI",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b2",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:MinCountConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/e0065293221c5851ec508ae96cd4ad03ffdedd19"
+            },
+            "sh:focusNode": {
+                "@id": "_:b1"
+            },
+            "sh:resultPath": {
+                "@id": "dcat:accessURL"
+            },
+            "sh:resultMessage": "Property needs to have at least 1 value",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b3",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/737cd5f1c9f0e13c35eb82b7f0d2b2f76a9a82c7"
+            },
+            "sh:focusNode": {
+                "@id": "_:b1"
+            },
+            "sh:value": "JSON-LD",
+            "sh:resultPath": {
+                "@id": "dc:format"
+            },
+            "sh:resultMessage": "Value must be an instance of dc:MediaTypeOrExtent",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b4",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/eb3ac4e4fdde2e2588a9502c5956060a18c5c99f"
+            },
+            "sh:focusNode": {
+                "@id": "https://dataserviceURI/transport"
+            },
+            "sh:value": {
+                "@id": "https://apiGetRequestURI/API/transport"
+            },
+            "sh:resultPath": {
+                "@id": "dcat:endpointURL"
+            },
+            "sh:resultMessage": "Value must be an instance of rdfs:Resource",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b5",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac"
+            },
+            "sh:focusNode": {
+                "@id": "https://dataserviceURI/transport"
+            },
+            "sh:value": {
+                "@id": "http://data.europa.eu/r5r/profile/dcat-ap/3.0.0"
+            },
+            "sh:resultPath": {
+                "@id": "dc:conformsTo"
+            },
+            "sh:resultMessage": "Value must be an instance of dc:Standard",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b6",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/c84f7330b9538a899ebb875c44dc23c9882e74ac"
+            },
+            "sh:focusNode": {
+                "@id": "https://dataserviceURI/transport"
+            },
+            "sh:value": {
+                "@id": "https://www.w3.org/TR/vocab-dcat-3/"
+            },
+            "sh:resultPath": {
+                "@id": "dc:conformsTo"
+            },
+            "sh:resultMessage": "Value must be an instance of dc:Standard",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b7",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/dede6a68a95ac0f43ca88def472d8fc001f86ebe"
+            },
+            "sh:focusNode": {
+                "@id": "https://djustconnect.be/en/api-emission-factors"
+            },
+            "sh:value": "emissies",
+            "sh:resultPath": {
+                "@id": "dcat:theme"
+            },
+            "sh:resultMessage": "Value must be an instance of skos:Concept",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b8",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/c84f7330b9538a899ebb875c44dc23c9882e74ac"
+            },
+            "sh:focusNode": {
+                "@id": "https://djustconnect.be/en/api-emission-factors"
+            },
+            "sh:value": {
+                "@id": "http://data.europa.eu/r5r/profile/dcat-ap/3.0.0"
+            },
+            "sh:resultPath": {
+                "@id": "dc:conformsTo"
+            },
+            "sh:resultMessage": "Value must be an instance of dc:Standard",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b9",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/c84f7330b9538a899ebb875c44dc23c9882e74ac"
+            },
+            "sh:focusNode": {
+                "@id": "https://djustconnect.be/en/api-emission-factors"
+            },
+            "sh:value": {
+                "@id": "https://www.w3.org/TR/vocab-dcat-3/"
+            },
+            "sh:resultPath": {
+                "@id": "dc:conformsTo"
+            },
+            "sh:resultMessage": "Value must be an instance of dc:Standard",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b10",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:ClassConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/87161588819073178c8f6950dcce2286cac45320"
+            },
+            "sh:focusNode": {
+                "@id": "https://djustconnect.be/en/api-emission-factors"
+            },
+            "sh:value": {
+                "@id": "https://echteurlblabla"
+            },
+            "sh:resultPath": {
+                "@id": "geodcat:referenceSystem"
+            },
+            "sh:resultMessage": "Value must be an instance of skos:Concept",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b11",
+            "sh:resultSeverity": {
+                "@id": "sh:Violation"
+            },
+            "sh:sourceConstraintComponent": {
+                "@id": "sh:NodeKindConstraintComponent"
+            },
+            "sh:sourceShape": {
+                "@id": "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/9678e29dc284ba14312bf01cd0a581b960b77a08"
+            },
+            "sh:focusNode": {
+                "@id": "https://djustconnect.be/en/api-emission-factors"
+            },
+            "sh:value": "emissies",
+            "sh:resultPath": {
+                "@id": "dcat:theme"
+            },
+            "sh:resultMessage": "Value does not have node kind BlankNodeOrIRI",
+            "@type": "sh:ValidationResult"
+        },
+        {
+            "@id": "_:b12",
+            "sh:result": [
+                {
+                    "@id": "_:b0"
+                },
+                {
+                    "@id": "_:b2"
+                },
+                {
+                    "@id": "_:b3"
+                },
+                {
+                    "@id": "_:b4"
+                },
+                {
+                    "@id": "_:b5"
+                },
+                {
+                    "@id": "_:b6"
+                },
+                {
+                    "@id": "_:b7"
+                },
+                {
+                    "@id": "_:b8"
+                },
+                {
+                    "@id": "_:b9"
+                },
+                {
+                    "@id": "_:b10"
+                },
+                {
+                    "@id": "_:b11"
+                }
+            ],
+            "sh:conforms": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "@type": "sh:ValidationReport"
+        }
+    ],
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "geodcat": "http://data.europa.eu/930/",
+        "org": "http://www.w3.org/ns/org#",
+        "tosh": "http://topbraid.org/tosh#",
+        "cnt": "http://www.w3.org/2011/content#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "hydra": "http://www.w3.org/ns/hydra/core#",
+        "geosparql": "http://www.opengis.net/ont/geosparql#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "graphql": "http://datashapes.org/graphql#",
+        "swa": "http://topbraid.org/swa#",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dash": "http://datashapes.org/dash#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "dc": "http://purl.org/dc/terms/"
+    }
+}
