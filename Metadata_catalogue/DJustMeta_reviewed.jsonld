@@ -1,0 +1,232 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "geodcat": "http://data.europa.eu/930/",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@id": "https://djustconnect.be/en/ConnectShop",
+  "@type": [
+    "dcat:Catalog",
+    "hydra:Collection"
+  ],
+  "dct:description": [
+    {
+      "@language": "nl",
+      "@value": "beschrijving"
+    },
+    {
+      "@language": "en",
+      "@value": "beschrijving"
+    }
+  ],
+  "dct:conformsTo": [
+    {
+      "@id": "https://www.w3.org/TR/vocab-dcat-3/",
+      "@type": "dct:Standard"
+    },
+    {
+      "@id": "http://data.europa.eu/r5r/profile/dcat-ap/3.0.0",
+      "@type": "dct:Standard"
+    },
+    {
+      "@id": "http://www.w3.org/ns/hydra/core#",
+      "@type": "dct:Standard"
+    }
+  ],
+  "dct:publisher": {
+    "@id": "https://ilvo.vlaanderen.be/en/",
+    "@type": "foaf:Agent",
+    "foaf:name": "ILVO"
+  },
+  "dct:title": {
+    "@language": "nl",
+    "@value": "DJustConnect catalog"
+  },
+  "hydra:itemsPerPage": 1,
+  "hydra:member": {
+    "@id": "https://djustconnect.be/en/api-emission-factors",
+    "@type": "dcat:Dataset",
+    "geodcat:referenceSystem": {
+      "@id": "https://www.opengis.net/def/crs/OGC/1.3/CRS84",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "WGS 84 longitude-latitude"
+      }
+    },
+    "dct:conformsTo": [
+      {
+        "@id": "https://www.w3.org/TR/vocab-dcat-3/",
+        "@type": "dct:Standard"
+      },
+      {
+        "@id": "http://data.europa.eu/r5r/profile/dcat-ap/3.0.0",
+        "@type": "dct:Standard"
+      }
+    ],
+    "dct:description": {
+      "@language": "en",
+      "@value": "This API provides greenhouse gas emission factors for various agricultural activities."
+    },
+    "dct:modified": {
+      "@value": "2026-03-19T10:23:57Z",
+      "@type": "xsd:dateTime"
+    },
+    "dct:publisher": {
+      "@id": "https://lv.vlaanderen.be/en",
+      "@type": "foaf:Agent",
+      "foaf:name": "Department of Agriculture and Fisheries - Flemish Government"
+    },
+    "dct:spatial": {
+      "@type": [
+        "dct:Location",
+        "skos:Concept"
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "nl",
+          "@value": "Merelbeke"
+        },
+        {
+          "@language": "en",
+          "@value": "merelbeke"
+        }
+      ],
+      "dcat:bbox": {
+        "@value": "POLYGON ((10 11, 18 11, 18 23, 10 23, 10 11))",
+        "@type": "geosparql:wktLiteral"
+      }
+    },
+    "dct:temporal": {
+      "@type": "dct:PeriodOfTime",
+      "dcat:endDate": {
+        "@value": "2026-03-19T10:23:57Z",
+        "@type": "xsd:dateTime"
+      },
+      "dcat:startDate": {
+        "@value": "2025-09-19T10:23:57Z",
+        "@type": "xsd:dateTime"
+      }
+    },
+    "dct:title": [
+      {
+        "@language": "en",
+        "@value": "API Greenhouse Gas Emission Factors"
+      },
+      {
+        "@language": "en",
+        "@value": "aemissions"
+      }
+    ],
+    "dcat:distribution": {
+      "@id": "https://djustconnect.be/en/api-emission-factors/distribution/jsonld",
+      "@type": "dcat:Distribution",
+      "dct:title": {
+        "@language": "en",
+        "@value": "API Greenhouse Gas Emission Factors - JSON-LD"
+      },
+      "dcat:accessURL": {
+        "@id": "https://apiGetRequestURI/API/transport",
+        "@type": "rdfs:Resource"
+      },
+      "dct:format": {
+        "@id": "https://www.iana.org/assignments/media-types/application/ld+json",
+        "@type": "dct:MediaTypeOrExtent"
+      },
+      "dcat:accessService": {
+        "@id": "https://dataserviceURI/transport"
+      }
+    },
+    "dcat:keyword": [
+      {
+        "@language": "en",
+        "@value": "emissions"
+      },
+      {
+        "@language": "en",
+        "@value": "ghg"
+      },
+      {
+        "@language": "en",
+        "@value": "climate"
+      }
+    ],
+    "dcat:spatialResolutionInMeters": {
+      "@value": "10.0",
+      "@type": "xsd:decimal"
+    },
+    "dcat:temporalResolution": {
+      "@value": "P1D",
+      "@type": "xsd:duration"
+    },
+    "dcat:theme": [
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_537c8433",
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "emissions from agriculture"
+        }
+      },
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_34841",
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "greenhouse gases"
+        }
+      },
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_1665",
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@language": "en",
+          "@value": "climate"
+        }
+      }
+    ]
+  },
+  "dcat:service": {
+    "@id": "https://dataserviceURI/transport",
+    "@type": "dcat:DataService",
+    "dct:conformsTo": [
+      {
+        "@id": "https://www.w3.org/TR/vocab-dcat-3/",
+        "@type": "dct:Standard"
+      },
+      {
+        "@id": "http://data.europa.eu/r5r/profile/dcat-ap/3.0.0",
+        "@type": "dct:Standard"
+      }
+    ],
+    "dcat:endpointURL": {
+      "@id": "https://dataserviceURI/transport",
+      "@type": "rdfs:Resource"
+    },
+    "dct:title": {
+      "@language": "en",
+      "@value": "REST API for agricultural transport and logistics data"
+    },
+    "dcat:servesDataset": {
+      "@id": "https://djustconnect.be/en/api-emission-factors"
+    }
+  },
+  "hydra:totalItems": 1,
+  "hydra:view": {
+    "@id": "https://localhost:44301/catalog.jsonld?page=1&modified_since=2026-03-18&profiles=DCAT&q=a&fq=keywords%3Aghg",
+    "@type": "hydra:PartialCollectionView",
+    "hydra:first": {
+      "@id": "https://localhost:44301/catalog.jsonld?page=1&modified_since=2026-03-18&profiles=DCAT&q=a&fq=keywords%3Aghg"
+    },
+    "hydra:last": {
+      "@id": "https://localhost:44301/catalog.jsonld?page=1&modified_since=2026-03-18&profiles=DCAT&q=a&fq=keywords%3Aghg"
+    }
+  }
+}
