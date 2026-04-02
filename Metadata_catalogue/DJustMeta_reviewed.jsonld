@@ -13,7 +13,7 @@
   },
   "@id": "https://djustconnect.be/en/ConnectShop",
   "@type": [
-    "dcat:Catalog",
+    "dcat:Catalogue",
     "hydra:Collection"
   ],
   "dct:description": [
