@@ -1,3 +1,3 @@
-# CEADS
+# High-Value Datasets (HVDs)
 
-AgroPortal related services in CEADS
+Space for testing with HVDs.
