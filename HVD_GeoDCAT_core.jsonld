@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "eli": "http://data.europa.eu/eli/ontology#",
+    "hvd": "http://data.europa.eu/r5r/"
+  },
+  "@graph": [
+    {
+      "@id": "https://example.org/dataset/ID",
+      "@type": "dcat:Dataset",
+      "dct:title": {
+        "@value": "Dataset title",
+        "@language": "en"
+      },
+      "dct:description": {
+        "@value": "Dataset description",
+        "@language": "en"
+      },
+      "dcat:distribution": {
+        "@id": "https://example.org/distribution/ID"
+      },
+      "hvd:applicableLegislation": {
+        "@id": "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+      },
+      "hvd:hvdCategory": {
+        "@id": "http://data.europa.eu/bna/c_4dd389c5"
+      }
+    },
+    {
+      "@id": "https://example.org/distribution/ID",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://example.org/download_or_landing"
+      },
+      "dcat:accessService": {
+        "@id": "https://example.org/service/api"
+      },
+      "hvd:applicableLegislation": {
+        "@id": "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC0"
+      }
+    },
+    {
+      "@id": "https://example.org/service/api",
+      "@type": "dcat:DataService",
+      "dct:title": {
+        "@value": "API title",
+        "@language": "en"
+      },
+      "dcat:endpointURL": {
+        "@id": "https://api.example.org"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://example.org/contact/api"
+      },
+      "foaf:page": {
+        "@id": "https://example.org/doc/api"
+      },
+      "hvd:applicableLegislation": {
+        "@id": "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+      },
+      "hvd:hvdCategory": {
+        "@id": "http://data.europa.eu/bna/c_4dd389c5"
+      },
+      "dcat:servesDataset": {
+        "@id": "https://example.org/dataset/ID"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC0"
+      }
+    },
+    {
+      "@id": "https://example.org/contact/api",
+      "@type": "vcard:Kind",
+      "vcard:hasEmail": {
+        "@id": "mailto:opendata@example.org"
+      }
+    },
+    {
+      "@id": "mailto:opendata@example.org",
+      "@type": "vcard:Email"
+    },
+    {
+      "@id": "https://example.org/doc/api",
+      "@type": "foaf:Document"
+    },
+    {
+      "@id": "http://data.europa.eu/eli/reg_impl/2023/138/oj",
+      "@type": "eli:LegalResource"
+    },
+    {
+      "@id": "https://api.example.org",
+      "@type": "rdfs:Resource"
+    },
+    { "@id": "https://example.org/download_or_landing",
+      "@type": "rdfs:Resource"
+    },
+    { "@id": "mailto:opendata@example.org",
+      "@type": "rdfs:Resource"
+    },
+    {
+      "@id": "http://data.europa.eu/bna/c_4dd389c5",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@value": "Mineral resources",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/licence/CC0",
+      "@type": "dct:LicenseDocument"
+    }
+  ]
+}
