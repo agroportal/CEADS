@@ -1,0 +1,361 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "eli": "http://data.europa.eu/eli/ontology#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "r5r": "http://data.europa.eu/r5r/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "gsp": "http://www.opengis.net/ont/geosparql#"
+  },
+  "@graph": [
+    {
+      "@id": "https://inspire-geoportal.ec.europa.eu/srv/api/records/6a6fcdd4-e789-47ed-93c7-14749ab171bb",
+      "@type": "dcat:CatalogRecord",
+      "dct:identifier": "6a6fcdd4-e789-47ed-93c7-14749ab171bb",
+      "dct:modified": {
+        "@value": "2025-04-11T10:34:32",
+        "@type": "xsd:dateTime"
+      },
+      "foaf:primaryTopic": {
+        "@id": "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024",
+        "@type": ["dcat:Dataset", "dcat:Resource"]
+      }
+    },
+    {
+      "@id": "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024",
+      "@type": "dcat:Dataset",
+      "dct:identifier": [
+        "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024",
+        "6a6fcdd4-e789-47ed-93c7-14749ab171bb"
+      ],
+      "dct:title": [
+        {
+          "@value": "Paikkatietoa sisältävä kasvulohko 2024",
+          "@language": "fi"
+        },
+        {
+          "@value": "Agricultural parcel containing spatial data 2024",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Kasvulohkot ovat vuosikohtainen aineisto, joka sisältää vuosittaisella tukihakemuksilla olevat kasvulohkot. Kasvulohkolla tarkoitetaan yhteen peruslohkoon kuuluvaa yhtenäistä aluetta, jossa kasvatetaan yhtä kasvilajia, useamman kasvilajin seosta tai jota kesannoidaan tai joka on erityiskäytössä. Yhdellä peruslohkolla voi olla yksi tai useampia kasvulohkoja. Kasvulohko voi kuulua vain yhteen peruslohkoon. Kasvulohkojen rajat ja samalla niiden pinta-alat voivat vaihdella peruslohkon sisällä vuosittain. Arvokkaiden tietoaineistojen (EU) 2023/138 määrittelyn tavoitteena on ollut varmistaa, että yhteiskunnallisesti potentiaalisimmat julkiset tiedot ovat uudelleen käytettävissä. Ruokavirastoa koskettaa teema paikkatieto: Viitelohkot ja Viljelylohkot. Ruokavirasto lisää vuoden 2023 tiedoista alkaen ominaisuustietoja julkaistaviin aineistoihin seuraavasti: Paikkatietoa sisältävä kasvulohko - Luonnonmukainen tuotanto. Aineistossa uusi kenttä LUOMUVILJELY: 1=kyllä tai 0=ei.",
+          "@language": "fi"
+        },
+        {
+          "@value": "The agricultural parcels are a year-by-year data set containing the agricultural parcels in the annual aid application. An agricultural parcel is a continuous area of a single reference parcel where a single crop, a mixture of crops, set-aside land, or a specific land use is declared. A reference parcel may have one or more agricultural parcels. An agricultural parcel belongs to only one reference parcel. The boundaries and areas of agricultural parcels may vary from year to year within the reference parcel. Under Regulation (EU) 2023/138, the Finnish Food Authority includes this dataset in the spatial high-value dataset category. From the 2023 data onwards, the published dataset includes the attribute LUOMUVILJELY (organic production), where 1=yes and 0=no.",
+          "@language": "en"
+        }
+      ],
+      "dct:publisher": {
+        "@id": "https://www.ruokavirasto.fi/en/",
+        "@type": "foaf:Agent",
+        "foaf:name": [
+          {
+            "@value": "Ruokavirasto",
+            "@language": "fi"
+          },
+          {
+            "@value": "Finnish Food Authority",
+            "@language": "en"
+          }
+        ]
+      },
+      "dct:issued": {
+        "@value": "2025-04-18",
+        "@type": "xsd:date"
+      },
+      "dct:modified": {
+        "@value": "2025-04-11T10:34:32",
+        "@type": "xsd:dateTime"
+      },
+      "dcat:keyword": [
+        {
+          "@value": "Maataloustuet",
+          "@language": "fi"
+        },
+        {
+          "@value": "Agricultural subsidies",
+          "@language": "en"
+        },
+        {
+          "@value": "Maatalous",
+          "@language": "fi"
+        },
+        {
+          "@value": "Agriculture",
+          "@language": "en"
+        },
+        {
+          "@value": "Maankäyttö",
+          "@language": "fi"
+        },
+        {
+          "@value": "Land use",
+          "@language": "en"
+        },
+        {
+          "@value": "Kansallinen",
+          "@language": "fi"
+        },
+        {
+          "@value": "National",
+          "@language": "en"
+        },
+        {
+          "@value": "Paikkatiedot",
+          "@language": "fi"
+        },
+        {
+          "@value": "Spatial data",
+          "@language": "en"
+        },
+        {
+          "@value": "Viljelylohkot",
+          "@language": "fi"
+        },
+        {
+          "@value": "Agricultural parcels",
+          "@language": "en"
+        }
+      ],
+      "dcat:theme": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI",
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@value": "Agriculture, fisheries, forestry and food",
+            "@language": "en"
+          }
+        }, 
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_2894",
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@value": "fields",
+            "@language": "en"
+          }
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_4182",
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@value": "land use",
+            "@language": "en"
+          }
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_fdfbb37f",
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@value": "parcels",
+            "@language": "en"
+          }
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_379bbe9f",
+          "@type": "skos:Concept",
+          "skos:prefLabel": {
+            "@value": "spatial data",
+            "@language": "en"
+          }
+        }
+
+      ],
+      "dcat:contactPoint": {
+        "@id": "https://www.ruokavirasto.fi/en/contact-us/",
+        "@type": "vcard:Kind",
+        "vcard:fn": "Finnish Food Authority / Ruokavirasto",
+        "vcard:hasEmail": {
+          "@id": "mailto:tiedonluovutus@ruokavirasto.fi",
+          "@type": [
+            "vcard:Email",
+            "rdfs:Resource"
+          ]
+        }
+      },
+      "dct:spatial": {
+        "@type": "dct:Location",
+        "locn:geometry": {
+          "@type": "locn:Geometry",
+          "rdf:value": {
+            "@value": "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON((19.08317359 59.45414258, 31.58672881 59.45414258, 31.58672881 70.09229553, 19.08317359 70.09229553, 19.08317359 59.45414258))",
+            "@type": "gsp:wktLiteral"
+          }
+        }
+      },
+      "r5r:hvdCategory": {
+        "@id": "http://publications.europa.eu/resource/authority/bna/c_642643e6",
+        "@type": "skos:Concept",
+        "skos:prefLabel": {
+          "@value": "Agricultural parcels",
+          "@language": "en"
+        }
+      },
+      "r5r:applicableLegislation": [
+        {
+          "@id": "http://data.europa.eu/eli/reg_impl/2023/138/oj",
+          "@type": "eli:LegalResource"
+        },
+        {
+          "@id": "http://data.europa.eu/eli/reg/2010/1089/oj",
+          "@type": "eli:LegalResource"
+        }
+      ],
+      "dcat:distribution": [
+        {
+          "@id": "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024/distribution/gpkg"
+        }
+      ],
+      "dcat:landingPage": {
+        "@id": "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024",
+        "@type": "foaf:Document"
+      }
+    },
+    {
+      "@id": "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024/distribution/gpkg",
+      "@type": "dcat:Distribution",
+      "dct:title": [
+        {
+          "@value": "Paikkatietoa sisältävä kasvulohko 2024 (GeoPackage)",
+          "@language": "fi"
+        },
+        {
+          "@value": "Agricultural parcel containing spatial data 2024 (GeoPackage)",
+          "@language": "en"
+        }
+      ],
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/GPKG",
+        "@type": [
+          "dct:MediaTypeOrExtent",
+          "rdfs:Resource"
+        ]
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/geopackage+sqlite3",
+        "@type": [
+          "dct:MediaType",
+          "rdfs:Resource"
+        ]
+      },
+      "dcat:accessURL": {
+        "@id": "https://download.inspire.ruokavirasto-awsa.com/data/2024/LandUse.ExistingLandUse.GSAAAgriculturalParcel.gpkg",
+        "@type": "rdfs:Resource"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://download.inspire.ruokavirasto-awsa.com/data/2024/LandUse.ExistingLandUse.GSAAAgriculturalParcel.gpkg",
+        "@type": "rdfs:Resource"
+      },
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/",
+        "@type": "dct:LicenseDocument"
+      },
+      "r5r:applicableLegislation": [
+        {
+          "@id": "http://data.europa.eu/eli/reg_impl/2023/138/oj",
+          "@type": "eli:LegalResource"
+        },
+        {
+          "@id": "http://data.europa.eu/eli/reg/2010/1089/oj",
+          "@type": "eli:LegalResource"
+        }
+      ],
+      "dcat:accessService": {
+        "@id": "https://inspire.ruokavirasto-awsa.com/geoserver/wfs"
+      }
+    },
+    {
+      "@id": "https://inspire.ruokavirasto-awsa.com/geoserver/wfs",
+      "@type": "dcat:DataService",
+      "dct:title": [
+        {
+          "@value": "Ruokavirasto - INSPIRE WFS",
+          "@language": "fi"
+        },
+        {
+          "@value": "Finnish Food Authority - INSPIRE WFS",
+          "@language": "en"
+        }
+      ],
+      "dcat:endpointURL": {
+        "@id": "https://inspire.ruokavirasto-awsa.com/geoserver/wfs?request=getcapabilities",
+        "@type": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "https://www.ruokavirasto.fi/inspire/",
+        "@type": "foaf:Document"
+      },
+      "dcat:contactPoint": {
+        "@id": "https://www.ruokavirasto.fi/en/contact-us/",
+        "@type": "vcard:Kind",
+        "vcard:fn": "Finnish Food Authority / Ruokavirasto",
+        "vcard:hasEmail": {
+          "@id": "mailto:tiedonluovutus@ruokavirasto.fi",
+          "@type": [
+            "vcard:Email",
+            "rdfs:Resource"
+          ]
+        }
+      },
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/",
+        "@type": "dct:LicenseDocument"
+      },
+      "r5r:applicableLegislation": [
+        {
+          "@id": "http://data.europa.eu/eli/reg_impl/2023/138/oj",
+          "@type": "eli:LegalResource"
+        },
+        {
+          "@id": "http://data.europa.eu/eli/reg/2010/1089/oj",
+          "@type": "eli:LegalResource"
+        }
+      ],
+      "r5r:hvdCategory": {
+        "@id": "http://publications.europa.eu/resource/authority/bna/c_642643e6",
+        "@type": "skos:Concept",
+        "skos:inScheme": {
+          "@id": "http://data.europa.eu/bna/asd487ae75",
+          "@type": ["skos:ConceptScheme", "rdfs:Resource"],
+          "dct:title": {
+            "@value": "High Value Dataset Categories",
+            "@language": "en"
+          }
+        }
+      },
+      "dcat:servesDataset": {
+        "@id": "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/bna/c_ac64a52d",
+      "@type": [
+        "skos:Concept",
+        "rdfs:Resource"
+      ],
+      "skos:inScheme": {
+        "@id": "http://data.europa.eu/bna/asd487ae75"
+      },
+      "skos:prefLabel": {
+        "@value": "Geospatial",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/bna/asd487ae75",
+      "@type": [
+        "skos:ConceptScheme",
+        "rdfs:Resource"
+      ]
+    }
+  ]
+}
