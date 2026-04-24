@@ -335,27 +335,6 @@
       "dcat:servesDataset": {
         "@id": "https://avoindata.suomi.fi/data/fi/dataset/paikkatietoa-sisaltava-kasvulohko-2024"
       }
-    },
-    {
-      "@id": "http://publications.europa.eu/resource/authority/bna/c_ac64a52d",
-      "@type": [
-        "skos:Concept",
-        "rdfs:Resource"
-      ],
-      "skos:inScheme": {
-        "@id": "http://data.europa.eu/bna/asd487ae75"
-      },
-      "skos:prefLabel": {
-        "@value": "Geospatial",
-        "@language": "en"
-      }
-    },
-    {
-      "@id": "http://data.europa.eu/bna/asd487ae75",
-      "@type": [
-        "skos:ConceptScheme",
-        "rdfs:Resource"
-      ]
     }
   ]
 }
