@@ -1,1 +1,8 @@
-
+geopandas
+pandas
+shapely
+pyproj
+folium
+mapclassify
+fiona
+requests
