@@ -107,14 +107,3 @@ docker run --rm \
   --crop-column code_group \
   --output output
 ```
-
-## AgrospAI deployment idea
-
-For a first AgrospAI / Pontus-X Compute-to-Data demo, use file mode:
-
-1. prepare or register an RPG GeoJSON extract as a dataset asset;
-2. register this Docker image as an algorithm asset;
-3. run the algorithm on the dataset;
-4. collect the generated outputs from the Compute-to-Data job.
-
-The same Docker image also includes API mode, which can support a future implementation where users specify a year and bounding box.
