@@ -1,10 +1,4 @@
-# Synthetic advisory: integrated management of a tomato crop
-
-> **Test status:** This is a completely fictional agricultural document created for software testing. The cooperative, greenhouse blocks, fields, measurements, and recommendations do not represent a real farm.
-
-## Why this document is long
-
-This advisory deliberately repeats agricultural terms in separated sections so that AgroAnnotator can be tested across multiple text chunks. The repeated phrases include **tomato**, **drip irrigation**, **fertigation**, **late blight**, **whitefly**, **biological control**, **soil moisture**, and **crop residue**. A successful document-level merge should retain the occurrences while deduplicating concepts that are recognized more than once.
+# Integrated management of a tomato crop
 
 ## 1. Production setting
 
