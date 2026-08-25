@@ -1,0 +1,39 @@
+Winter Wheat Field Scouting Note - North Meadow Demonstration Plot
+
+Purpose
+
+This made-up field note is intended only for testing agricultural text extraction and ontology annotation. The farm, plot, people, measurements, and recommendations are fictional.
+
+Field context
+
+The North Meadow demonstration plot contains 12 hectares of winter wheat grown on a clay loam soil. The previous crop was faba bean, and chopped faba bean residue was incorporated after harvest. This crop rotation was selected to reduce the cereal disease burden and to improve biological nitrogen supply. Winter wheat seed was drilled in October after shallow conservation tillage. A grass and clover cover crop had been terminated six weeks before sowing.
+
+The soil test indicated pH 6.7, moderate soil organic matter, adequate phosphorus, and low available potassium in the eastern part of the plot. Cattle manure had been applied before the faba bean crop, but no fresh manure was applied before the winter wheat. The first nitrogen fertilizer dressing was delivered at tillering. A second nitrogen fertilizer application is planned near stem elongation, provided that soil moisture and rainfall remain adequate.
+
+Weather and soil conditions
+
+During the seven days before scouting, the field received 18 millimetres of rainfall. The weather station recorded cool nights, moderate relative humidity, and two extended periods of leaf wetness. The upper soil layer was moist but not waterlogged. Soil moisture was lower on the sandy ridge at the western boundary, where wheat plants showed mild drought stress during the afternoon. No irrigation was applied because additional rainfall was forecast and the root zone still contained plant-available water.
+
+Crop observations
+
+Most winter wheat plants were at early stem elongation. Plant density was uniform in the centre of the field, while two headlands had thin crop establishment caused by compaction from machinery traffic. Leaves were generally green, but older leaves on the potassium-deficient eastern strip showed marginal yellowing. A handheld chlorophyll meter suggested that nitrogen status was sufficient in the central plots and slightly lower near the sandy ridge.
+
+The scouting team found small colonies of cereal aphid on scattered wheat tillers. Aphid abundance remained below the local action threshold. Several ladybirds and lacewing larvae were present beside the aphid colonies, indicating active biological control by beneficial insects. No insecticide treatment was recommended. The field should be inspected again in seven days, particularly if warm and dry weather accelerates aphid reproduction.
+
+Disease observations
+
+Low levels of Septoria leaf blotch were visible on the oldest winter wheat leaves. Symptoms consisted of irregular brown lesions with small dark fruiting bodies. Septoria was more frequent in dense areas where leaf wetness persisted after rainfall. The upper canopy remained largely free of disease. Yellow rust and powdery mildew were not observed during this visit.
+
+Because Septoria was confined to lower leaves, a fungicide application was not recommended at the current growth stage. Disease risk should be reassessed after the next rainfall event. The decision should consider wheat variety susceptibility, crop growth stage, leaf wetness duration, forecast temperature, and the position of symptoms within the canopy. Avoiding an unnecessary fungicide application will help preserve fungicide efficacy and support integrated pest management.
+
+Weed observations
+
+Blackgrass occurred in three compacted patches near the southern entrance. Common chickweed and field poppy were present at low density. The blackgrass patches were marked with geographic coordinates for targeted management. Operators should clean the combine harvester after working in the affected zone so that blackgrass seed is not transported to another field. A competitive cover crop and a delayed sowing date should be considered in the next crop rotation.
+
+Recommended actions
+
+Continue monitoring winter wheat growth, soil moisture, cereal aphid, and Septoria leaf blotch. Do not apply insecticide while aphid abundance remains below the action threshold and beneficial insects remain active. Review the second nitrogen fertilizer rate using the latest soil mineral nitrogen result, expected grain yield, and weather forecast. Avoid nitrogen application before intense rainfall to reduce nitrate leaching and surface runoff. Inspect the compacted headlands and consider controlled traffic or subsoiling only where a soil assessment confirms a restrictive layer. Map the blackgrass patches before harvest and maintain machinery hygiene.
+
+Expected annotation signals
+
+The document intentionally repeats winter wheat, soil moisture, nitrogen fertilizer, cereal aphid, Septoria leaf blotch, crop rotation, rainfall, cover crop, and biological control. A concept summary may group some phrases under broader ontology concepts, and exact preferred labels may differ between ontologies.
