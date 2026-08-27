@@ -1,0 +1,65 @@
+﻿AGROANNOTATOR TEST FIXTURE
+Integrated Maize and Dairy Forage Management Report
+A structured DOCX fixture for agricultural ontology annotation
+Document status
+	Synthetic test data - not an agronomic recommendation
+	Fictional operation
+	Green Valley Mixed Farm
+	Primary subjects
+	Maize silage, dairy cattle, manure, crop rotation, soil fertility, pests and disease
+	1. Executive summary
+This fictional report describes the management of maize grown for silage on a mixed dairy farm. It is designed to test whether a DOCX parser extracts agricultural concepts from headings, ordinary paragraphs, tables, bullet lists, and numbered actions. The report deliberately repeats maize, silage, dairy cattle, manure, nitrogen, crop rotation, Fusarium, soil moisture, and forage across several structural elements.
+The maize crop followed Italian ryegrass in a crop rotation that supplies forage to dairy cattle throughout the year. Cattle slurry and composted manure contributed nutrients and soil organic matter, while mineral nitrogen fertilizer was adjusted using a soil test and expected crop demand. Scouting focused on wireworm, European corn borer, Fusarium ear rot, weeds, drought stress, and compaction. Harvest planning considered whole-plant dry matter, kernel maturity, chop length, silo compaction, and the risk of mycotoxin contamination.
+2. Farm and field context
+The fictional Green Valley Mixed Farm maintains a dairy herd and grows maize silage, Italian ryegrass, lucerne, and winter wheat. The maize field covers 24 hectares of clay loam soil. A stream buffer and permanent grass strip border the lower slope. The previous forage crop was Italian ryegrass, which was harvested as silage before maize planting. Crop residue was retained where practical, and a shallow conservation tillage pass prepared the seedbed.
+Soil analysis indicated pH 6.5, moderate soil organic matter, sufficient phosphorus, and variable potassium. The lower slope had higher soil moisture and a greater risk of compaction. The upper field dried quickly during warm weather. These differences were used to divide the maize field into management zones rather than applying the same irrigation and fertilizer rate everywhere.
+3. Nutrient and manure plan
+Composted cattle manure was applied before seedbed preparation. Dairy slurry was applied with low-emission equipment and incorporated according to the fictional farm plan. The nutrient budget estimated available nitrogen, phosphorus, and potassium from manure, slurry, soil reserves, and mineral fertilizer. The calculation also considered expected maize yield and nutrient removal in harvested silage.
+The second nitrogen fertilizer application was conditional on rainfall, soil moisture, crop colour, and a rapid soil nitrate test. No fertilizer was scheduled immediately before intense rainfall because surface runoff and nitrate leaching would reduce nutrient-use efficiency. A grass buffer beside the stream was maintained without fertilizer or manure application.
+4. Monitoring observations
+The table places agricultural terminology inside DOCX cells so that the extractor can be checked for table coverage.
+Zone
+	Crop stage
+	Soil and water
+	Pest or disease
+	Management response
+	Upper slope
+	Maize at six leaves
+	Low soil moisture; mild drought stress
+	No wireworm damage
+	Inspect irrigation uniformity and conserve soil moisture
+	Central zone
+	Rapid vegetative growth
+	Adequate soil moisture and nitrogen
+	European corn borer moth in pheromone trap
+	Continue scouting; do not treat from one trap count
+	Lower slope
+	Maize at six to seven leaves
+	Wet clay loam and wheel compaction
+	Early root stress; no confirmed disease
+	Avoid machinery traffic until soil dries
+	Field margin
+	Mixed grasses and flowering plants
+	Buffer beside stream
+	Ladybird and parasitoid wasp observed
+	Protect beneficial insects and maintain buffer vegetation
+	5. Crop protection findings
+Pheromone traps captured a small number of European corn borer moths, but stem tunnelling was not observed. Several maize seedlings on the headland had poor vigour; excavation did not confirm wireworm. Weed scouting recorded barnyard grass, common lambsquarters, and field bindweed. The weed patches were mapped for targeted mechanical cultivation and later evaluation.
+Fusarium ear rot was not present at the vegetative stage, but its future risk was discussed because insect injury, wet weather, and delayed harvest can increase infection risk. At silage harvest, ears should be inspected for mould. Suspected Fusarium and possible mycotoxin contamination should be assessed using appropriate sampling and laboratory analysis. Visual inspection alone cannot establish feed safety for dairy cattle.
+6. Recommended field actions
+* Monitor maize growth stage, soil moisture, rainfall, and signs of drought stress in each management zone.
+* Record European corn borer trap catches, inspect maize stems, and protect ladybirds and parasitoid wasps by avoiding unnecessary broad-spectrum insecticide.
+* Review the nitrogen fertilizer rate using manure nitrogen, dairy slurry, soil nitrate, expected silage yield, and weather.
+* Keep manure, slurry, and mineral fertilizer outside the stream buffer, and map compaction, wireworm symptoms, weeds, and suspected Fusarium ear rot for follow-up.
+7. Silage harvest and storage
+Harvest timing should be based on whole-plant dry matter, kernel milk line, crop health, and weather rather than on a calendar date alone. Maize harvested too wet can produce effluent and undesirable fermentation. Maize harvested too dry can be difficult to compact, increasing oxygen penetration and aerobic spoilage.
+The forage harvester should produce a consistent chop length and adequate kernel processing. Silage should be delivered to the bunker without delay, spread in thin layers, and compacted safely. The silo should be sealed promptly. During feed-out, the exposed silage face should remain smooth and advance fast enough to limit heating and mould growth.
+Silage analysis should measure dry matter, crude protein, starch, fibre, fermentation acids, and indicators of spoilage. If Fusarium ear rot or another mould is suspected, a representative sample should be analysed for relevant mycotoxin. The result should be interpreted with a livestock nutrition adviser before maize silage is included in the dairy cattle ration.
+8. Numbered verification steps
+1. Confirm that paragraphs, headings, bullet items, numbered items, and every observation-table cell appear in the extracted text.
+2. Run AgroAnnotator with the default ontology and verify that AGROVOC is recorded in the run metadata.
+3. Check whether repeated mentions of maize, silage, dairy cattle, manure, nitrogen, Fusarium, and crop rotation are merged at document level.
+4. Validate global offsets for concepts from a table cell and a bullet item, then compare concept-summary JSON and CSV files for consistent labels, URIs, ontology acronyms, occurrence counts, and example phrases.
+9. Interpretation note
+AgroAnnotator detects ontology concepts mentioned in the report; it does not validate the fictional measurements or certify an agricultural recommendation. A match for Fusarium does not mean that Fusarium ear rot was confirmed. A match for insecticide does not mean that an insecticide was applied. Downstream users should preserve context such as negation, uncertainty, crop stage, and the difference between monitoring and treatment. End of synthetic agricultural test document.
+Synthetic agricultural report | Page
